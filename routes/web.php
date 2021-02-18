@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/admin',  'App\Http\Controllers\AdminController::class@index')->name('admin')->middleware('admin');
+Route::get('/admin',  'App\Http\Controllers\AdminController@index')->name('admin')->middleware('admin');
 Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home')->middleware('verified');;
 
 //Уведомление О Проверке Электронной Почты
